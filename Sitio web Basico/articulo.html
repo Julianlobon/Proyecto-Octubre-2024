@@ -26,12 +26,17 @@
     />
     <!-- <meta property="og:image" content="[URL de una imagen relevante]"> -->
     <!-- <meta property="og:url" content="[URL de tu página de artículos]"> -->
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <section class="header header-section">
+      <header class="header header-nombre">
+        <img class="header-logo" src="img/favicon.png" alt="Logo de Julian Lobon">
         <h1>Julian Lobon</h1>
-        <ul>
+      </header>
+      <nav>
+        <ul class="header header-tabs">
           <li class="tabs">
             <a href="index.html" rel="noopener noreferrer">Home</a>
           </li>
@@ -46,8 +51,10 @@
           </li>
         </ul>
       </nav>
-      <section>
-        <h2>Artículos</h2>
+    </section>
+
+      <section class="header header-hero">
+        <h2 class="header-titulo">Artículos</h2>
         <p>
           Sumérgete en nuestra colección de artículos, donde compartimos ideas,
           investigaciones y tendencias relevantes. Descubre contenido que
@@ -56,10 +63,10 @@
       </section>
     </header>
 
-    <main>
+    <main class="main">
       <h2>Escritos sobre el mi Aprendizaje en Programación</h2>
 
-      <section>
+      <section class="main-section">
         <article>
           <p>Marzo 1 - Marzo 31, 2023</p>
           <h4>Haciendo lo Difícil en Programación Hace Todo Más Fácil</h4>
@@ -153,7 +160,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer"> 
       <p>
         © Julian Lobon Aguilar - 2024. Todos los derechos reservados. El
         contenido de este portfolio, incluidos textos, imágenes y diseños, no
