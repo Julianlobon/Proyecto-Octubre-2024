@@ -22,109 +22,105 @@
 </head>
 
 <body>
-  <header class="header">
-    <section class="header header-section">
-      <header class="header header-nombre">
-        <img class="header-logo" src="img/favicon.png" alt="Logo de Julian Lobon">
+  <header class="container col header">
+    <section class="container header--section">
+      <header class="container header__nombre">
+        <img class="header__logo" src="img/favicon.png" alt="Logo de Julian Lobon">
         <h1>Julian Lobon</h1>
       </header>
       <nav>
-        <ul class="header header-tabs">
-          <li class="tabs">
-            <a href="index.html" rel="noopener noreferrer">Home</a>
-          </li>
-          <li class="tabs">
-            <a href="proyecto.html" rel="noopener noreferrer">Proyecto</a>
-          </li>
-          <li class="tabs">
-            <a href="articulo.html" rel="noopener noreferrer">Articulo</a>
-          </li>
-          <li class="tabs">
-            <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
-          </li>
+        <ul class="container header__tabs">
+          <li class="tabs"><a href="index.html" rel="noopener noreferrer">Home</a></li>
+          <li class="tabs"><a href="proyecto.html" rel="noopener noreferrer">Proyecto</a></li>
+          <li class="tabs"><a href="articulo.html" rel="noopener noreferrer">Articulo</a></li>
+          <li class="tabs"><a href="contacto.html" rel="noopener noreferrer">Contacto</a></li>
         </ul>
       </nav>
     </section>
 
-    <section class="header header-hero">
-      <h2 class="header-titulo">Contactos</h2>
-      <p>
+    <section class="container col header__hero">
+      <h2 class="header__titulo">Contactos</h2>
+      <p class="header--p">
         Estamos aquí para ayudarte. Si tienes preguntas, sugerencias o deseas
-        colaborar, no dudes en ponerte en contacto con nosotros. ¡Esperamos
-        saber de ti!
+        colaborar, no dudes en ponerte en contacto. ¡Espero saber de ti!
       </p>
     </section>
   </header>
 
-  <main class="main">
-    <section class="main-section">
-      <form action="">
-        <h4>Contácteme</h4>
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="asunto" placeholder="Asunto" required>
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <aside>
-        <h4>Información de Contacto</h4>
-        <p>Siempre disponible para trabajar como autónomo si surge el proyecto adecuado. ¡No dudes en ponerte en
-          contacto conmigo!</p>
-        <article>
-          <i class="fa-solid fa-user"></i>
-          <section>
-            <h5>Nombre:</h5>
-            <p>Julian Lobon</p>
-          </section>
-        </article>
+  <main class="container">
+    <section class="container col sec__main">
 
-        <article>
-          <i class="fa-solid fa-location-dot"></i>
-          <h5>Ubicación:</h5>
-          <p>Calle 1 # 25 21 Cali, Colombia</p>
-        </article>
-        
-        <article>
-          <i class="fa-solid fa-phone"></i>
-          <h5>Llama me:</h5>
-          <p>+57 3117063560</p>
-        </section>
+      <aside class="container">
+        <form class="main__form container col" action="">
+          <h4 class="main__titulo--h4">Contácteme</h4>
+         <section class="container main__form">
+           <input class="input" type="text" name="nombre" placeholder="Nombre" required>
+           <input class="input" type="email" name="email" placeholder="Email" required>
+         </section>
+          <input class="input" type="text" name="asunto" placeholder="Asunto" required>
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+          <button class="btn-contacto" type="submit">Enviar</button>
+        </form>
+
+        <aside class="contacto--aside">
+          <h4 class="main__titulo--h4">Información de Contacto</h4>
+          <p class="main__apartado__parrafo">Siempre disponible para trabajar como autónomo si surge el proyecto adecuado. ¡No dudes en ponerte en
+            contacto conmigo!</p>
+          <article class="container info__contacto">
+            <i class="fa-solid fa-user"></i>
+            <section class="container col">
+              <h5 class="main__titulo--h4">Nombre:</h5>
+              <p class="main__apartado__parrafo">Julian Lobon</p>
+            </section>
+          </article>
+
+          <article class="container info__contacto">
+            <i class="fa-solid fa-location-dot"></i>
+            <section class="container col">
+            <h5 class="main__titulo--h4">Ubicación:</h5>
+            <p class="main__apartado__parrafo">Calle 1 # 25 21 Cali, Colombia</p>
+            </section>
+          </article>
+
+          <article class="container info__contacto">
+            <i class="fa-solid fa-phone"></i>
+            <section class="container col">
+            <h5 class="main__titulo--h4">Llama me:</h5>
+            <p class="main__apartado__parrafo">+57 3117063560</p>
+            </section>
+          </article>
+
+          <article class="container info__contacto">
+            <i class="fa-solid fa-envelope"></i>
+            <section class="container col">
+            <h5 class="main__titulo--h4">Correo Electrónico:</h5>
+            <p class="main__apartado__parrafo">Julianlobon@hotmail.com</p>
+            </section>
+          </article>
+
+          <footer class="container ">
+            <a href="https://github.com/LobonJulian"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/julian-aguilar/"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/your-facebook-profile-url"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/your-twitter-profile-url"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/your-instagram-profile-url"><i class="fa-brands fa-instagram"></i></a>
+          </footer>
+        </aside>
+      </aside>
+
+      <article class="sec__main">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31862.327930420062!2d-76.20867533840332!3d3.4011045266275355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1728494727074!5m2!1ses!2sco"
+        allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
-      
-      <article>
-        <i class="fa-solid fa-envelope"></i>
-        <h5>Correo Electrónico:</h5>
-        <p>Julianlobon@hotmail.com</p>
-      </section>
-    </article>
-  </aside>
-</section>
 
-    <footer>
-      <a href="https://github.com/LobonJulian"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/julian-aguilar/"> <i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/your-facebook-profile-url"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://twitter.com/your-twitter-profile-url"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.instagram.com/your-instagram-profile-url"><i class="fa-brands fa-instagram"></i></a>
-    </footer>
-    
-    </section>
-    </section>
-
-    <section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31862.327930420062!2d-76.20867533840332!3d3.4011045266275355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1728494727074!5m2!1ses!2sco"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>
-      © Julian Lobon Aguilar - 2024. Todos los derechos reservados. El
-      contenido de este portfolio, incluidos textos, imágenes y diseños, no
-      puede ser reproducido ni utilizado sin el permiso expreso del autor.
-    </p>
+  <footer class="container footer">
+    <p> <span>© Julian Lobon Aguilar - 2024.</span> Todos los derechos reservados. El contenido de este portfolio,
+      incluidos textos, imágenes y diseños, no puede ser reproducido ni utilizado sin el permiso expreso del autor.</p>
   </footer>
 </body>
 
