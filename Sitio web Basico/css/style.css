@@ -184,14 +184,35 @@ button:hover {
 }
 
 .main__resena {
-  gap: 5rem;
+  gap: 3rem;
   border-radius: 0.75rem;
   background-color: var(--bg-fondo);
+  flex-wrap: wrap;
 }
 
-.main__resena--section {
+.tarjeta {
+  width: 250px;
+  padding: 1rem;
+  border-radius: 1rem;
   background-color: var(--bg-tarjeta);
-  gap: 1rem;
+
+  h4 {
+    font-size: 16px;
+    color: var(--bg-fondo);
+  }
+
+  p {
+    font-size: 12px;
+
+    em {
+      opacity: 0.3;
+    }
+  }
+
+  img {
+    max-width: 5rem;
+    border-radius: 1rem;
+  }
 }
 
 .footer {
