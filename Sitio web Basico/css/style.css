@@ -79,7 +79,7 @@ button:hover {
 
 .header--section {
   justify-content: space-between;
-  padding: 0rem 1rem;
+  padding: 1rem;
 }
 
 .header__nombre {
@@ -93,6 +93,48 @@ button:hover {
 
 .header__tabs {
   gap: 1.25rem;
+}
+
+.tabs {
+  position: relative;
+}
+
+.tabs::before {
+  content: attr(data-tabs);
+  position: absolute;
+  left: 50%;
+  bottom: 200%;
+  padding: 0.85rem;
+  transform: translateX(-50%);
+  background-color: var(--bg-tarjeta);
+  color: var(--white);
+  font-size: .7rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  visibility: visible;
+}
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  transform: translateX(-50%);
+  border-width: 1rem;
+  border-style: solid;
+  border-color: var(--bg-tarjeta) transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.2s;
+  visibility: hidden;
+}
+
+.tabs:hover::before,
+.tabs:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header__hero {
@@ -237,11 +279,16 @@ button:hover {
   padding: 0 0.5rem;
   max-width: 350px;
   border: 1px solid var(--bg-fondo);
-  align-items: self-start;
+  justify-content: space-between;
 }
 
 .card--img {
-  padding: 3rem 0 1rem;
+  padding-top: 0.5rem;
+
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
 
 .card--ol {
@@ -359,12 +406,14 @@ input:invalid+.error {
   }
 }
 
-
 @media (max-width: 768px) {
-
   .header--section,
   .header__nombre {
     flex-direction: column;
+  }
+
+  .header__tabs {
+      padding-top: 1.75rem;
   }
 
   .sec__main {
