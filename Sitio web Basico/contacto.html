@@ -30,10 +30,13 @@
       </header>
       <nav>
         <ul class="container header__tabs">
-          <li class="tabs"><a href="index.html" rel="noopener noreferrer">Home</a></li>
-          <li class="tabs"><a href="proyecto.html" rel="noopener noreferrer">Proyecto</a></li>
-          <li class="tabs"><a href="articulo.html" rel="noopener noreferrer">Articulo</a></li>
-          <li class="tabs"><a href="contacto.html" rel="noopener noreferrer">Contacto</a></li>
+          <li><a class="tabs" data-tabs="Estas en Inicio" href="index.html" rel="noopener noreferrer">Home</a></li>
+          <li><a class="tabs" data-tabs="Aquí están los Proyectos" href="proyecto.html"
+              rel="noopener noreferrer">Proyecto</a></li>
+          <li><a class="tabs" data-tabs="Vas haber algunos artículos " href="articulo.html"
+              rel="noopener noreferrer">Articulo</a></li>
+          <li><a class="tabs active" data-tabs="Esta es la sección para contactarse" href="contacto.html"
+              rel="noopener noreferrer">Contacto</a></li>
         </ul>
       </nav>
     </section>
@@ -51,20 +54,21 @@
     <section class="container col sec__main">
 
       <aside class="container contacto__aside">
-        <form class="container col main__form"> 
+        <form class="container col main__form">
           <h4 class="main__titulo--h4">Contácteme</h4>
           <section class="container main__form">
             <label for="nombre">
               <input class="input" type="text" name="nombre" placeholder="Nombre" required aria-required="true">
             </label>
             <label for="email">
-              <input class="input" type="email" name="email" placeholder="Email" minlength='10' required aria-required='true' aria-invalid='true'>
+              <input class="input" type="email" name="email" placeholder="Email" minlength='10' required
+                aria-required='true' aria-invalid='true'>
               <span class="error" id="errorEmail">Por favor, ingresa un email válido.</span>
             </label>
-           </section>
-           <label for="asunto">
-             <input class="input" type="text" name="asunto" placeholder="Asunto" required>
-           </label>
+          </section>
+          <label for="asunto">
+            <input class="input" type="text" name="asunto" placeholder="Asunto" required>
+          </label>
           <textarea name="mensaje" placeholder="Mensaje" required></textarea>
           <button class="btn-contacto" type="submit">Enviar</button>
         </form>

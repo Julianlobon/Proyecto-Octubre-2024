@@ -137,6 +137,11 @@ button:hover {
   visibility: visible;
 }
 
+.active{
+  color: var(--bg-tarjeta);
+  border-bottom: 2px solid var(--bg-tarjeta);
+}
+
 .header__hero {
   padding: 1.5rem;
 
